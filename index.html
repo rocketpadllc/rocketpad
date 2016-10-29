@@ -1,0 +1,188 @@
+<html>
+<head>
+  <title></title>
+  <style>
+    @font-face {
+      font-family: 'Bauhaus';
+      src:  url('fonts/Bauhaus.eot');
+      src:  url('fonts/Bauhaus.eot?#iefix') format('embedded-opentype'),
+            url('fonts/Bauhaus.woff2') format('woff2'),
+            url('fonts/Bauhaus.woff') format('woff'),
+            url('fonts/Bauhaus.ttf') format('truetype'),
+            url('fonts/Bauhaus.svg#Bauhaus') format('svg');
+    }
+
+    * {
+      margin: 0;
+    }
+
+    body {
+      font-family: Calibri, sans-serif;
+      font-size: 16px;
+      background: #EFEFEF;
+    }
+
+    header {
+      background: url(bg.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    #header-text {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 650px;
+      margin: auto;
+      border: 4px solid #fff;
+      border-radius: 3px;;
+    }
+
+    #header-text h1 {
+      font-size: 5.25em;
+      letter-spacing: 3px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 0.25em 0.5em 0 0.5em;
+      background: rgba(0, 0, 0, 0.65);
+    }
+
+    #header-text h2 {
+      font-size: 2em;
+      color: #FFFFFF;
+      background: #FF8A8E;
+      padding: 0.5em 0;
+    }
+
+    #arrow, #arrow:visited {
+      font-size: 6em;
+      position: absolute;
+      bottom: 0.5em;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #9D0B0F;
+      display: inline-block;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #9D0B0F;
+      font-family: "Bauhaus", Verdana, sans-serif;
+    }
+
+    section {
+      padding: 7em 1em 1em 1em; /* should have top padding equal to size of navbar */
+      height: 100%;
+    }
+
+    section h1 {
+      font-size: 3em;
+    }
+
+    section h2 {
+      color: #333;
+      font-family: Calibri, sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 5em;
+    }
+
+    nav #logo h1 {
+      display: inline-block;
+      color: #FFFFFF;
+      vertical-align: top;
+      font-size: 2.5em;
+      padding: 0.15em 0 0 0.25em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    nav #logo img {
+      height: 3.5em;
+      padding: 0.75em;
+    }
+
+    nav a {
+      text-decoration: none;
+      line-height: 5em;
+      padding: 0 0.5em;
+    }
+
+    #links {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      height: 100%;
+    }
+
+    nav #links a {
+      display: inline-block;
+      height: 100%;
+    }
+
+    .section-holder {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 1em;
+    }
+
+    .section {
+      padding: 1em;
+      width: 300px;
+      text-align: center;
+    }
+
+  </style>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="jquery.smooth-scroll.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('body').smoothScroll({
+      delegateSelector: 'a',
+      easing: 'swing',
+      autoCoefficient: -1
+    });
+  });
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="#top" id="logo"><img src="rocket.png" /><h1>Rocketpad LA</h1></a>
+    <div id="links"><a href="#">Example</a><a href="#">Example</a><a href="#">Example</a><a href="#">Example</a></div>
+  </nav>
+  <header>
+      <div id="header-text">
+        <h1>Rocketpad LA</h1>
+        <h2>high-school summer startup accelerator</h2>
+      </div>
+      <a href="#section" id="arrow" class="animated pulse infinite"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+  </header>
+  <section id="info">
+    <h1>Launching High School Startups</h1>
+    <h2>Launch your own company as a member of the inaugural class of RocketPad LA.</h2>
+    <div class="section-holder">
+      <div class="section"><h3>Get real funding.</h3><p>Each team will receive up to $1,000 to pursue their idea, no strings attached.</p></div>
+      <div class="section"><h3>Find real customers.</h3><p></p></div>
+      <div class="section"><h3>Meet great mentors.</h3><p></p></div>
+    </div>
+
+  </section>
+  </header>
+  <section>
+    <h1>Section Title</h1>
+  </section>
+</body>
+</html>
