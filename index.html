@@ -77,7 +77,7 @@
 
     section {
       padding: 7em 1em 1em 1em; /* should have top padding equal to size of navbar */
-      height: 100%;
+      min-height: 100%;
     }
 
     section h1 {
@@ -87,6 +87,7 @@
     section h2 {
       color: #333;
       font-family: Calibri, sans-serif;
+      padding: 0.25em 0;
     }
 
     nav {
@@ -132,14 +133,32 @@
     .section-holder {
       display: flex;
       justify-content: space-around;
+      flex-direction: column;
       flex-wrap: wrap;
       padding: 1em;
     }
 
     .section {
-      padding: 1em;
-      width: 300px;
+      padding: 1.25em;
+      width: 600px;
       text-align: center;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 2em;
+      text-align: left;
+    }
+
+    .section i {
+      font-size: 5em;
+      float: left;
+      margin-right: 0.25em;
+    }
+
+    .section p {
+      text-align: left;
+      font-size: 1.25em;
     }
 
   </style>
@@ -157,32 +176,45 @@
     });
   });
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <nav>
     <a href="#top" id="logo"><img src="rocket.png" /><h1>Rocketpad LA</h1></a>
     <div id="links"><a href="#">Example</a><a href="#">Example</a><a href="#">Example</a><a href="#">Example</a></div>
   </nav>
-  <header>
+  <header id="top">
       <div id="header-text">
         <h1>Rocketpad LA</h1>
         <h2>high-school summer startup accelerator</h2>
       </div>
-      <a href="#section" id="arrow" class="animated pulse infinite"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <a href="#info" id="arrow" class="animated pulse infinite"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
   </header>
   <section id="info">
     <h1>Launching High School Startups</h1>
     <h2>Launch your own company as a member of the inaugural class of RocketPad LA.</h2>
     <div class="section-holder">
-      <div class="section"><h3>Get real funding.</h3><p>Each team will receive up to $1,000 to pursue their idea, no strings attached.</p></div>
-      <div class="section"><h3>Find real customers.</h3><p></p></div>
-      <div class="section"><h3>Meet great mentors.</h3><p></p></div>
+      <div class="section">
+        <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+        <h3>Get real funding.</h3>
+        <p>Each team will receive up to $1,000 to pursue their idea, no strings attached.</p>
+      </div>
+      <div class="section">
+        <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+        <h3>Find real customers.</h3>
+        <p>More cool text will go here that describes how cool this program is woohoo.</p>
+      </div>
+      <div class="section">
+        <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+        <h3>Meet great mentors.</h3>
+        <p>Blah blah blah, blah blah blah. Blah. Blah blah blah blah blah blah blah.</p>
+      </div>
     </div>
 
   </section>
   </header>
   <section>
-    <h1>Section Title</h1>
+    <h1>section title</h1>
   </section>
 </body>
 </html>
