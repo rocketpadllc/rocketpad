@@ -1,195 +1,59 @@
 <html>
 <head>
-  <title></title>
-  <style>
-    @font-face {
-      font-family: 'Bauhaus';
-      src:  url('fonts/Bauhaus.eot');
-      src:  url('fonts/Bauhaus.eot?#iefix') format('embedded-opentype'),
-            url('fonts/Bauhaus.woff2') format('woff2'),
-            url('fonts/Bauhaus.woff') format('woff'),
-            url('fonts/Bauhaus.ttf') format('truetype'),
-            url('fonts/Bauhaus.svg#Bauhaus') format('svg');
-    }
-
-    * {
-      margin: 0;
-    }
-
-    body {
-      font-family: Calibri, sans-serif;
-      font-size: 16px;
-      background: #EFEFEF;
-    }
-
-    header {
-      background: url(bg.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-    }
-
-    #header-text {
-      text-align: center;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      max-width: 650px;
-      margin: auto;
-      border: 4px solid #fff;
-      border-radius: 3px;;
-    }
-
-    #header-text h1 {
-      font-size: 5.25em;
-      letter-spacing: 3px;
-      color: #ffffff;
-      text-transform: uppercase;
-      padding: 0.25em 0.5em 0 0.5em;
-      background: rgba(0, 0, 0, 0.65);
-    }
-
-    #header-text h2 {
-      font-size: 2em;
-      color: #FFFFFF;
-      background: #FF8A8E;
-      padding: 0.5em 0;
-    }
-
-    #arrow, #arrow:visited {
-      font-size: 6em;
-      position: absolute;
-      bottom: 0.5em;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #9D0B0F;
-      display: inline-block;
-    }
-
-    h1, h2 {
-      text-align: center;
-      color: #9D0B0F;
-      font-family: "Bauhaus", Verdana, sans-serif;
-    }
-
-    section {
-      padding: 7em 1em 1em 1em; /* should have top padding equal to size of navbar */
-      min-height: 100%;
-    }
-
-    section h1 {
-      font-size: 3em;
-    }
-
-    section h2 {
-      color: #333;
-      font-family: Calibri, sans-serif;
-      padding: 0.25em 0;
-    }
-
-    nav {
-      position: fixed;
-      background: rgba(0, 0, 0, 0.3);
-      width: 100%;
-      height: 5em;
-    }
-
-    nav #logo h1 {
-      display: inline-block;
-      color: #FFFFFF;
-      vertical-align: top;
-      font-size: 2.5em;
-      padding: 0.15em 0 0 0.25em;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    nav #logo img {
-      height: 3.5em;
-      padding: 0.75em;
-    }
-
-    nav a {
-      text-decoration: none;
-      line-height: 5em;
-      padding: 0 0.5em;
-    }
-
-    #links {
-      display: inline-block;
-      position: absolute;
-      right: 0;
-      height: 100%;
-    }
-
-    nav #links a {
-      display: inline-block;
-      height: 100%;
-    }
-
-    .section-holder {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding: 1em;
-    }
-
-    .section {
-      padding: 1.25em;
-      width: 600px;
-      text-align: center;
-      margin: auto;
-    }
-
-    .section h3 {
-      font-size: 2em;
-      text-align: left;
-    }
-
-    .section i {
-      font-size: 5em;
-      float: left;
-      margin-right: 0.25em;
-    }
-
-    .section p {
-      text-align: left;
-      font-size: 1.25em;
-    }
-
-  </style>
+  <title>RocketPad LA :: Home</title>
+  <link href="style.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="jquery.smooth-scroll.js"></script>
   <script>
-  $(document).ready(function() {
-    $('body').smoothScroll({
-      delegateSelector: 'a',
-      easing: 'swing',
-      autoCoefficient: -1
+    $(document).ready(function() {
+      $('body').smoothScroll({
+        delegateSelector: 'a',
+        easing: 'swing',
+        autoCoefficient: -1
+      });
     });
-  });
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <nav>
     <a href="#top" id="logo"><img src="rocket.png" /><h1>Rocketpad LA</h1></a>
-    <div id="links"><a href="#">Example</a><a href="#">Example</a><a href="#">Example</a><a href="#">Example</a></div>
+    <div id="links"><a href="philosophy.html">Philosophy</a><a href="team.html">Team</a><a href="mentors.html">Mentors</a><a href="apply.html">Apply Now</a></div>
   </nav>
   <header id="top">
       <div id="header-text">
-        <h1>Rocketpad LA</h1>
+        <h1>RocketPad LA</h1>
         <h2>high-school summer startup accelerator</h2>
       </div>
       <a href="#info" id="arrow" class="animated pulse infinite"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
   </header>
+  <svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path d="M-5 100 Q 0 20 5 100 Z
+					 M0 100 Q 5 0 10 100
+					 M5 100 Q 10 30 15 100
+					 M10 100 Q 15 10 20 100
+					 M15 100 Q 20 30 25 100
+					 M20 100 Q 25 -10 30 100
+					 M25 100 Q 30 10 35 100
+					 M30 100 Q 35 30 40 100
+					 M35 100 Q 40 10 45 100
+					 M40 100 Q 45 50 50 100
+					 M45 100 Q 50 20 55 100
+					 M50 100 Q 55 40 60 100
+					 M55 100 Q 60 60 65 100
+					 M60 100 Q 65 50 70 100
+					 M65 100 Q 70 20 75 100
+					 M70 100 Q 75 45 80 100
+					 M75 100 Q 80 30 85 100
+					 M80 100 Q 85 20 90 100
+					 M85 100 Q 90 50 95 100
+					 M90 100 Q 95 25 100 100
+					 M95 100 Q 100 15 105 100 Z">
+			</path>
+		</svg>
   <section id="info">
     <h1>Spend your summer building a real company.</h1>
     <h2>Hustle with the best and brightest of the LA startup scene.</h2>
@@ -210,11 +74,13 @@
         <p>Ignite your passions in a cohort of 36 driven student entrepreneurs from all around Los Angeles.</p>
       </div>
     </div>
-Most entrepreneurship programs focus on frameworks and theories, but make no mistake: the best way to learn is to do. 
   </section>
   </header>
-  <section>
-    <h1>section title</h1>
+  <section id="learn-by-doing">
+    <div class="900">
+      <h1>Learn by<br />doing.</h1>
+      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.<br /><br /><a href="#" class="cta">call to action</a></p>
+    </div>
   </section>
 </body>
 </html>
