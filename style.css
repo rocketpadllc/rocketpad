@@ -11,10 +11,10 @@
 @font-face {
   font-family: 'Garth Graphic';
   src:  url('fonts/Garth Graphic.eot');
-  src:  url('fonts/Garth Grahpic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Garth Grahpic.woff2') format('woff2'),
-        url('fonts/Garth Grahpic.woff') format('woff'),
-        url('fonts/Garth Grahpic.ttf') format('truetype'),
+  src:  url('fonts/Garth Graphic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Garth Graphic.woff2') format('woff2'),
+        url('fonts/Garth Graphic.woff') format('woff'),
+        url('fonts/Garth Graphic.ttf') format('truetype'),
         url('fonts/Garth Graphic.svg#Bauhaus') format('svg');
 
 * {
