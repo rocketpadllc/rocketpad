@@ -1,0 +1,5 @@
+To Do:
+
+-fix border on landing page
+-brainstorm ways to make mentor page more aesthetically pleasing/account for large bios
+-start philosophy page & FAQ page
