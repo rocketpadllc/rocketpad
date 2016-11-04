@@ -8,12 +8,21 @@
         url('fonts/Bauhaus.svg#Bauhaus') format('svg');
 }
 
+@font-face {
+  font-family: 'Garth Graphic';
+  src:  url('fonts/Garth Graphic.eot');
+  src:  url('fonts/Garth Grahpic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Garth Grahpic.woff2') format('woff2'),
+        url('fonts/Garth Grahpic.woff') format('woff'),
+        url('fonts/Garth Grahpic.ttf') format('truetype'),
+        url('fonts/Garth Graphic.svg#Bauhaus') format('svg');
+
 * {
   margin: 0;
 }
 
 body {
-  font-family: Calibri, sans-serif;
+  font-family: Garth Graphic, serif; 
   font-size: 16px;
   background: #EFEFEF;
 }
@@ -86,7 +95,7 @@ section h1 {
 
 section h2 {
   color: #333;
-  font-family: Calibri, sans-serif;
+  font-family: Avenir, sans-serif;
   padding: 0.25em 0;
 }
 
