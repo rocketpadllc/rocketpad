@@ -16,6 +16,7 @@
         url('fonts/Garth Graphic.woff') format('woff'),
         url('fonts/Garth Graphic.ttf') format('truetype'),
         url('fonts/Garth Graphic.svg#Bauhaus') format('svg');
+}
 
 * {
   margin: 0;
