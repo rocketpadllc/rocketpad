@@ -23,13 +23,13 @@
 }
 
 body {
-  font-family: Garth Graphic, serif; 
+  font-family: "Garth Graphic", serif;
   font-size: 16px;
   background: #EFEFEF;
 }
 
 header {
-  background: url(bg.jpg) no-repeat center center fixed;
+  background: url('bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -216,7 +216,7 @@ a.cta, a.cta:visited {
 .mentor {
   width: 300px;
   margin: 15px;
-  background: #F9F9F9;
+  background: #FFFFFF;
   border-radius: 10px;
   display: inline-block;
   padding: 0 0 15px 0;
