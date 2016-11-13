@@ -73,8 +73,7 @@ header {
   font-size: 6em;
   position: absolute;
   bottom: 0.5em;
-  left: 50%;
-  transform: translateX(-50%);
+  left: calc(50% - 0.25em);
   color: #9D0B0F;
   display: inline-block;
 }
@@ -148,6 +147,10 @@ nav #links a:last-of-type {
   padding-right: 1.5em;
 }
 
+#toggleMenu {
+  display: none;
+}
+
 .section-holder {
   display: flex;
   justify-content: space-around;
@@ -158,7 +161,7 @@ nav #links a:last-of-type {
 
 .section {
   padding: 1.25em;
-  width: 600px;
+  max-width: 600px;
   text-align: center;
   margin: auto;
 }
@@ -187,6 +190,7 @@ nav #links a:last-of-type {
   display: flex;
   margin: auto;
   max-width: 900px;
+  flex-wrap: wrap;
 }
 
 #learn-by-doing h1 {
@@ -213,7 +217,7 @@ a.cta, a.cta:visited {
 }
 
 .mentor {
-  width: 300px;
+  max-width: 300px;
   margin: 15px;
   background: #FFFFFF;
   border-radius: 10px;
@@ -244,4 +248,54 @@ a.cta, a.cta:visited {
 
 .mentor-school {
   height: 60px;
+}
+
+@media (max-width: 700px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  nav #logo {
+    padding: 0;
+  }
+
+  #header-text {
+    max-width: 85%;
+  }
+
+  #header-text h1 {
+    font-size: 3.25em;
+  }
+
+  #clouds {
+    display: none;
+  }
+
+  .section h3 {
+    font-size: 1.5em;
+  }
+
+  .section i {
+    font-size: 3em;
+  }
+
+  #learn-by-doing h1 {
+    font-size: 5em;
+  }
+
+  #links {
+    width: 100%;
+    top: 5em;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+
+  #toggleMenu {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    right: 0.5em;
+  }
+
 }
