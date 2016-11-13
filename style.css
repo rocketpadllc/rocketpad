@@ -39,8 +39,7 @@ header {
 }
 
 #clouds {
-  margin-top: -100px;
-  background: #EFEFEF;
+  transform: rotate(180deg);
 }
 
 #header-text {
