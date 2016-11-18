@@ -84,8 +84,29 @@ h1, h2 {
   font-family: "Bauhaus", Verdana, sans-serif;
 }
 
+section:first-of-type {
+  padding: 6em 1em 1em 1em; /* should have top padding equal to size of navbar */
+}
+
 section {
-  padding: 7em 1em 1em 1em; /* should have top padding equal to size of navbar */
+  padding: 4em 1em 4em 1em; /* should have top padding equal to size of navbar */
+}
+
+footer {
+  padding: 2em 1em;
+  background: #333;
+  text-align: center;
+  color: #EEE;
+}
+
+a.footer-icon, a.footer-icon:visited {
+  color: #EEE;
+  font-size: 3em;
+  margin: 0.2em;
+}
+
+footer p {
+  margin: 1em 0;
 }
 
 section h1 {
@@ -184,19 +205,32 @@ nav #links a:last-of-type {
 
 #learn-by-doing {
   background: #C8BFB6;
+  color: #494037;
 }
 
 #learn-by-doing div {
-  display: flex;
   margin: auto;
   max-width: 900px;
-  flex-wrap: wrap;
 }
 
 #learn-by-doing h1 {
-  font-size: 8em;
-  text-align: left;
+  font-size: 6em;
   text-transform: uppercase;
+}
+
+#learn-by-doing p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  max-width: 600px;
+  text-align: justify;
+  margin: auto;
+}
+
+#learn-by-doing a, a:visited {
+  display: block;
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 a.cta, a.cta:visited {
@@ -208,6 +242,19 @@ a.cta, a.cta:visited {
   padding: 0.25em 0.5em;
   border-radius: 10px;
   font-weight: 300;
+}
+
+a.cta.secondary {
+  background: #CCC;
+  color: #333;
+}
+
+#cta {
+  text-align: center;
+}
+
+#cta a {
+  margin: 0.25em;
 }
 
 .twelve-hundred {
@@ -250,6 +297,25 @@ a.cta, a.cta:visited {
   height: 60px;
 }
 
+#logistics {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
+
+#logistics .third {
+  width: 33%;
+  text-align: center;
+}
+
+#logistics h2 {
+  font-size: 2.5em;
+}
+
+#questions {
+  padding: 0;
+}
+
 @media (max-width: 700px) {
 
   body {
@@ -280,8 +346,21 @@ a.cta, a.cta:visited {
     font-size: 3em;
   }
 
+  #learn-by-doing div {
+    flex-wrap: wrap;
+  }
+
   #learn-by-doing h1 {
-    font-size: 5em;
+    font-size: 4.5em;
+  }
+
+  #logistics {
+    flex-direction: column;
+  }
+
+  #logistics .third {
+    width: auto;
+    margin: 1em 0;
   }
 
   #links {

@@ -10,6 +10,7 @@
 
   <title>RocketPad :: Home</title>
   <link href="style.css" rel="stylesheet">
+  <link href="animate.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
@@ -39,6 +40,11 @@
       } else {
         $('nav').fadeOut();
       }
+
+      if ((y + window.innerHeight) >= $('#learn-by-doing h1').offset().top) {
+          $('#learn-by-doing h1').addClass('animated slideInLeft');
+      }
+
     });
 
   </script>
@@ -106,9 +112,41 @@
   </header>
   <section id="learn-by-doing">
     <div class="900">
-      <h1>Learn by<br />doing.</h1>
-      <p><br />“The way to get started is to quit talking and begin doing.” -Walt Disney. <br /><br />Entrepreneurship is everywhere. Whether you're starting a venture or working at a Fortune 500 company, your ability to specifically identify problems and build creative solutions will be invaluable. And while traditional business frameworks can be useful, the real learning happens when you try, fail, and try again. Don't waste your summer on theories, spend your summer at RocketPad.<br /><br /><a href="https://rocketpad.typeform.com/to/VUUocq" class="cta">Apply now!</a></p>
+      <h1>Learn by doing.</h1>
+      <p>Whether you're starting a venture or working at a large company, entrepreneurship is everywhere. While traditional business frameworks can be useful, the real learning happens when you try, fail, and try again.<br /><br />Don't waste your summer on theories, spend your summer at RocketPad.<br /><br /><a href="https://rocketpad.typeform.com/to/VUUocq" class="cta">Apply now!</a></p>
     </div>
   </section>
+  <section id="logistics">
+    <div class="third"><h2>Tuition</h2><p>More information goes here</p></div>
+    <div class="third"><h2>Dates</h2><p>More information goes here</p></div>
+    <div class="third"><h2>Location</h2><p>More information goes here</p></div>
+  </section>
+  <section id="questions">
+    <div class="section-holder">
+      <div class="section">
+        <h3>This is a ... question?</h3>
+        <p>Each team will receive up to $1,000 to kickstart their venture, no strings attached.</p>
+      </div>
+      <div class="section">
+        <h3>wow, question?</h3>
+        <p>You'll learn about every aspect of business: accounting, operations, finance, marketing, and legal.</p>
+      </div>
+      <div class="section">
+        <h3>Make great friends.</h3>
+        <p>Ignite your passions in a cohort of 36 driven student entrepreneurs from all around Los Angeles.</p>
+      </div>
+  </section>
+  <section id="cta">
+    <a class="cta secondary" href="philosophy.html">Philosophy</a><!--
+    --><a class="cta" href="https://rocketpad.typeform.com/to/VUUocq">Apply Now</a>
+  </section>
+  <footer>
+    <p>
+      <a href="mailto:" class="footer-icon"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="footer-icon"><i class="fa fa-facebook-official"></i></a>
+      <a href="#" class="footer-icon"><i class="fa fa-twitter-square"></i></a>
+    </p>
+    <p>Copyright 2016 &amp; Beyond &mdash; RocketPad Ventures, LLC</p>
+  </footer>
 </body>
 </html>
