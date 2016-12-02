@@ -297,6 +297,32 @@ a.cta.secondary {
   height: 60px;
 }
 
+.philosophy-section {
+  max-width: 600px;
+  margin: 15px auto;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0 0 0.3em 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.philosophy-section h2 {
+  background: #9D0B0F;
+  color: #FFFFFF;
+  padding: 0.35em 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.philosophy-section ul {
+  margin-top: 0.5em;
+}
+
+.philosophy-section li {
+  margin: 1em 0;
+}
+
 #logistics {
   display: flex;
   justify-content: center;
