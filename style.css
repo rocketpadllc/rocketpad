@@ -124,6 +124,7 @@ nav {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 5em;
+  z-index: 999;
 }
 
 nav #logo h1 {
@@ -187,7 +188,7 @@ nav #links a:last-of-type {
   margin: auto;
 }
 
-.section h3 {
+.section h2 {
   font-size: 2em;
   text-align: left;
 }
@@ -364,7 +365,7 @@ a.cta.secondary {
     display: none;
   }
 
-  .section h3 {
+  .section h2 {
     font-size: 1.5em;
   }
 

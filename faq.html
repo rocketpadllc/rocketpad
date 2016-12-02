@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>RocketPad :: Mentors</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="jquery.smooth-scroll.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('body').smoothScroll({
+      delegateSelector: 'a',
+      easing: 'swing',
+      autoCoefficient: -1
+    });
+
+    $('#toggleMenu').click(function() {
+      if($('#links')[0].style.display == "block") {
+        $('#links').fadeOut();
+      } else {
+        $('#links').fadeIn();
+      }
+    });
+  });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <nav>
+    <a href="index.html" id="logo"><img src="rocket.png" /><h1>Rocketpad</h1></a><a id="toggleMenu">Menu</a>
+    <div id="links"><a href="philosophy.html">Philosophy</a><a href="faq.html">FAQ</a><a href="team.html">Team</a><a href="mentors.html">Mentors</a><a href="https://rocketpad.typeform.com/to/VUUocq">Apply Now</a></div>
+  </nav>
+  <section>
+    <h1>Frequently Asked Questions</h1>
+
+    <section id="questions">
+      <div class="section-holder">
+        <div class="section">
+          <h2>What is RocketPad?</h2>
+        	<p>RocketPad is a rigorous accelerator where members will learn the principles of entrepreneurship and business by launching a real company alongside experienced mentors.</p>
+        </div>
+
+        <div class="section">
+          <h2>DO YOU TAKE ANY EQUITY FROM THE ACCEPTED COMPANIES?</h2>
+        	<p>Nope! Any and all funding you receive from RocketPad comes with no strings attached. You’ll own 100% of your company at the end of the program.</p>
+        </div>
+
+        <div class="section">
+          <h2>WHAT IS THE FORMAT OF THE LEARNING EXPERIENCE?</h2>
+        	<p>While the majority of the accelerator will be spent working on their company, students can expect lectures, exercises, and innovative curricula. We’ll also have frequent field trips to startups and innovation spaces in the LA area.</p>
+        </div>
+
+        <div class="section">
+          <h2>WHO WILL TEACH THE LECTURES?</h2>
+        	<p>Along with both of the founders of RocketPad, certain guest speakers and lecturers from the LA, SF, and Boston startup communities will make appearances! More details will be revealed soon.</p>
+        </div>
+
+        <div class="section">
+          <h2>DO I NEED TO HAVE A BUSINESS IDEA I PLAN TO PURSUE PRIOR TO APPLYING?</h2>
+        	<p>You do not need to have a business idea or plan! Everybody has passions, and we’ll work with you during the first week to transform yours into a scalable venture (or help you find another team that you’re equally passionate about!).</p>
+        </div>
+
+        <div class="section">
+          <h2>WILL THERE BE ANY HOMEWORK OR GRADED ASSIGNMENTS?</h2>
+        	<p>The startup life is addicting - we can’t guarantee you won’t want to check your daily sales revenue from home. However, you’ll get feedback from coaches, mentors, and staff members throughout the six weeks, but no grades!</p>
+        </div>
+
+        <div class="section">
+          <h2>CAN STUDENTS OUTSIDE OF LOS ANGELES APPLY FOR THE PROGRAM?</h2>
+        	<p>We’d love to have you apply, but we can’t provide housing or be responsible for your daily transportation. If you’re under 18, you’d have to live with an adult somewhere in Los Angeles and manage your own commute.</p>
+        </div>
+
+        <div class="section">
+          <h2>WHAT IS THE ADVANTAGE OF APPLYING EARLY?</h2>
+        	<p>We review applications on a rolling basis, so the quicker you apply, the quicker you’ll hear back (and have a better shot at getting in!).</p>
+        </div>
+
+        <div class="section">
+          <h2>HOW CAN I RECEIVE A SCHOLARSHIP?</h2>
+        	<p>Any acceptance to RocketPad is need blind, meaning any financial aid application is considered independently of admission. If you deserve to be here, we’ll make it possible.</p>
+        </div>
+
+        <div class="section">
+          <h2>WHAT GRADES AND AGES MAY APPLY?</h2>
+        	<p>Any incoming high schooler may apply to RocketPad - that is to say, if you’ll be a 9th, 10th, 11th, or 12th grader in the fall of 2017, apply away!</p>
+        </div>
+
+        <div class="section">
+          <h2>WHAT ARE THE SELECTION CRITERIA?</h2>
+        	<p>The first thing we look for is passion about a venture, industry, or activity. Apart from a true desire to jump headfirst into entrepreneurship, prior business experience, technical skills, and stellar grades also help!</p>
+        </div>
+
+        <div class="section">
+          <h2>WHAT APPLICATION MATERIALS ARE NEEDED?</h2>
+        	<p>Apart from a brief application here(LINK), you’ll need a letter of recommendation from a mentor or teacher, a resume or LinkedIn page, and an unofficial transcript from your school.</p>
+        </div>
+
+        <div class="section">
+          <h2>DOES THE APPLICATION COST ANYTHING?</h2>
+        	<p>Nope! Application is completely free. If accepted, a $500 deposit is required to confirm your spot (subject to change based on your financial aid package).</p>
+        </div>
+
+        <div class="section">
+          <h2>HOW WILL I FIND OUT IF I AM ACCEPTED?</h2>
+        	<p>We’ll reach out by email to let you know about any updates to your application.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <a class="cta secondary" href="team.html">Team</a><!--
+      --><a class="cta" href="https://rocketpad.typeform.com/to/VUUocq">Apply Now</a>
+    </section>
+  </section>
+</body>
+</html>
