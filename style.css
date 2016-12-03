@@ -337,6 +337,7 @@ a.cta.secondary {
 #logistics .third {
   width: 33%;
   text-align: center;
+  padding: 0 2em;
 }
 
 #logistics h2 {
