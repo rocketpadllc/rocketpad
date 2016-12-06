@@ -193,7 +193,7 @@ nav #links a:last-of-type {
 }
 
 .section h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: left;
 }
 
@@ -205,7 +205,6 @@ nav #links a:last-of-type {
 
 .section p {
   text-align: left;
-  font-size: 1.25em;
 }
 
 #learn-by-doing {
