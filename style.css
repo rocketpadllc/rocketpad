@@ -315,6 +315,9 @@ a.cta.secondary {
   border-radius: 10px 10px 0 0;
 }
 
+.justify {
+  margin-right: 2em;
+}
 .philosophy-section ul {
   margin-top: 0.5em;
 }
