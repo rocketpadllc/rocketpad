@@ -69,6 +69,13 @@ header {
   padding: 0.5em 0;
 }
 
+#header-text h3 {
+  font-size: 2em;
+  color: #FFFFFF
+  background: #FF8A8E
+  padding: 0.5em 0;
+}
+
 #arrow, #arrow:visited {
   font-size: 6em;
   position: absolute;
@@ -78,7 +85,7 @@ header {
   display: inline-block;
 }
 
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
   color: #9D0B0F;
   font-family: "Bauhaus", Verdana, sans-serif;
