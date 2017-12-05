@@ -365,8 +365,6 @@ a.cta.secondary {
 }
 
 #founders img {
-  max-width: 354px
-  max-height: 353px;
   border: 1em solid #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   transform: rotate(-5deg);
